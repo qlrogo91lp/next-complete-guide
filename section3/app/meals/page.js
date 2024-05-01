@@ -5,6 +5,11 @@ import classes from './page.module.css';
 import MealsGrid from '@/components/meals/meals-grid';
 import { getMeals } from '@/lib/meals';
 
+export const metadata = {
+  title: 'All Meals',
+  description: 'Browse the delicious meals shared by our vibrant community.',
+};
+
 // Suspense 컴포넌트를 사용하기 위해서 따로 분리
 async function Meal() {
   const meals = await getMeals();
